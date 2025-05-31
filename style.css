@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:linear-gradient(45deg,rgba(207, 4, 4, 0.705), rgba(10, 54, 199, 0.384)), url(images/pexels-apasaric-2341830.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+    display: flex;
+    width: 100%;
+}
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+button,
+input{
+    outline: 0 !important;
+}
+.playerCredential{
+    width: 32%;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    height: 90vh;
+    left: 2%;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.playerCredential .signPlayer h1{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px blue;
+}
+.playerCredential .signPlayer img{
+    width: 40px;
+    height: 40px;
+}
+.playerCredential .signPlayer input{
+    padding: 10px 10px;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+} 
+select{
+    padding: 10px;
+    width: 48%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.644);
+    border-radius: 20px;
+    outline: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+option{
+    font-weight: 600;
+}
+.playerCredential .signPlayer button:nth-child(3),
+label,
+#saveChanges{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg,blue, red);
+    margin-bottom: 2rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.playerCredential .signPlayer label{
+    font-size: 13px;
+}
+.displayInfo{
+    background:linear-gradient(135deg, rgba(0, 255, 255, 0.295), rgba(255, 0, 0, 0.212)) ;
+    height: 50vh;
+    width: 92%;
+    border-radius: 20px;
+    position: relative;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+}
+.buttonParent{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    left: -5%;
+}
+.playerCredential .signPlayer button:hover,
+label:hover{
+    transform: translateY(-2px);
+}
+.displayInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.displayInfo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 2px;
+    object-fit: cover;
+    background-color: white;
+    position: relative;
+}
+.displayInfo .profile::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(blue,red);
+    height: 30vh;
+    margin-left: 15px;
+}
+.displayInfo p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* field */
+.fieldContainer{
+    border-radius: 20px;
+    width: 53%;
+    position: absolute;
+    right: 3%;
+    height: 60vh;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    overflow: hidden;
+}
+.fieldContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.preference{
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    display: flex;
+    gap: 1rem;
+}
+.preference button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg,blue, red);
+    margin-bottom: 2rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.preference button:hover{
+    transform: translateY(-5px);
+}
+.coach{
+    display: flex;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    gap: 15rem;
+}
+.coach img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.coach p{
+    font-weight: 600;
+    color: white;
+}
+/* .coach div:nth-child(1){
+    mar
+} */
+.fieldContainer
+.format{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transform-style: preserve-3d; */
+}
+.format > img:nth-child(1){
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    height: 100%;
+    scale: 1.04;
+}
+.stadiumDrop{
+    width: 100%;
+    /* border: 5px solid green; */
+    height: 67px;
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.466),rgba(255, 0, 0, 0.404));
+    background-position: center;
+    filter: blur(2px);
+    background-size: cover;
+    z-index: 100;
+    bottom:0px;
+    position: absolute;
+}
+.displayHome .eachPlayer,
+.displayAway .eachPlayer{
+    position: absolute;
+    top: 33%;
+    left: 12%;
+    z-index: 1000;
+    transform: rotateZ(-75deg) rotateY(-55deg) rotateX(40deg);
+    cursor: pointer;
+}
+.displayHome .LW{
+    top: 18%;
+    left: 40%;
+    transform: rotateZ(-75deg) rotateY(-60deg) rotateX(50deg);
+}
+.displayHome .RW{
+    top: 58%;
+    left: 41%;
+    transform: rotateZ(-75deg) rotateY(-63deg) rotateX(50deg);
+}
+.displayHome .CF{
+    top: 34.5%;
+    left: 42.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .SS{
+    top: 36%;
+    left: 38.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .AMF{
+    top: 36%;
+    left: 34.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .MF{
+    top: 36%;
+    left: 30.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .DMF{
+    top: 35%;
+    left: 23.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .LMF{
+    top: 20%;
+    left: 30.5%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .RMF{
+    top: 60.5%;
+    left: 28%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .LB{
+    top: 20.5%;
+    left: 20%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .RB{
+    top: 61.5%;
+    left: 15%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .CB1{
+    top: 48.5%;
+    left: 15%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayHome .CB2{
+    top: 27.5%;
+    left: 20%;
+    transform: rotateZ(-75deg) rotateY(-67deg) rotateX(50deg);
+}
+.displayAway .eachPlayer{
+    left: 84.5%;
+    transform: rotateZ(75deg) rotateY(50deg) rotateX(45deg);
+}
+.displayAway .LW{
+    top: 18%;
+    left: 56.5%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .RW{
+    top: 58%;
+    left: 57.5%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .CF{
+    top: 34.5%;
+    left: 55%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .SS{
+    top: 35%;
+    left: 59%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .AMF{
+    top: 35%;
+    left: 62%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .MF{
+    top: 36%;
+    left: 67%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .DMF{
+    top: 35%;
+    left: 70%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .LMF{
+    top: 20%;
+    left: 66%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .RMF{
+    top: 59.5%;
+    left: 69%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .LB{
+    top: 18%;
+    left: 75%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .RB{
+    top: 61.5%;
+    left: 85%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .CB1{
+    top: 48.5%;
+    left: 82%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.displayAway .CB2{
+    top: 23.5%;
+    left: 76%;
+    transform: rotateZ(75deg) rotateY(63deg) rotateX(45deg);
+}
+.eachPlayer img{
+    background: linear-gradient(135deg, red, blue);
+    text-align: center;
+    border-radius: 100%;
+    padding: 9px 0px;
+    width: 35px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+}
+.eachPlayer p{
+    color: white;
+    font-weight: bold;
+}
+.show{
+    display: none;
+}
+.playerEdit{
+    position: absolute;
+    bottom: -20px;
+    left: 16%;
+    display: flex;
+    gap: 2rem;
+}
+.playerEdit button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 0px;
+    text-align: center;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: 600;
+    background: linear-gradient(45deg,blue, red);
+    margin-bottom: 2rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.playerEdit button:hover{
+    transform: translateY(-5px);
+}
+.edit{
+    position: absolute;
+    display: flex;
+    display: none;
+    left: 50%;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    gap: 1.5rem;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 30px;
+}
+.edit label{
+    padding: 5px 20px;
+}
+.edit div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.edit img{
+    width: 150px;
+    height: 150px;
+}
+.edit input,
+#saveChanges{
+    padding: 10px;
+    border-radius: 20px;
+}
+#saveChanges{
+    position: absolute;
+    bottom: -15px;
+    margin: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

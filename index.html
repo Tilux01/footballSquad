@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="playerCredential">
+            <div class="signPlayer">
+                <h1><img src="images/shopping-list.png" alt=""> Register Player</h1>
+                <input type="text" placeholder="UserName" id="userName">
+                <select name="" id="team">
+                    <option value="Home">Home</option>
+                    <option value="Away">Away</option>
+                </select>
+                <input type="text" placeholder="Age" id="age">
+                <select name="" id="position">
+                    <option value="LW">Left Wing</option>
+                    <option value="RW">Right Wing</option>
+                    <option value="CF">Striker</option>
+                    <option value="MF">MF</option>
+                    <option value="LMF">LMF</option>
+                    <option value="RMF">RMF</option>
+                    <option value="DMF">DMF</option>
+                    <option value="LB">Left Back</option>
+                    <option value="RB">Right Back</option>
+                    <option value="CB1">CB1</option>
+                    <option value="CB2">CB2</option>
+                    <option value="GK">GK</option>
+                    <option value="SS">SS</option>
+                    <option value="AMF">AMF</option>
+                </select>
+                <div class="buttonParent">
+                    <label for="upload">Upload Image</label>
+                    <input type="file" accept="images/*" style="display: none;" id="upload">
+                    <button id="addPlayer">Add Player</button>
+                </div>
+            </div>
+            <div class="displayInfo">
+                <div class="profile"><img src="images/user.png" alt="" id="displayImg"></div>
+                <div>
+                    <p id="displayName">Name: Null</p> 
+                    <p id="displayAge">Age: Null</p>
+                    <p id="displayTeam">Team: Null</p>
+                    <p id="displayPosition">Postion: Null</p>
+                </div>
+                <div class="playerEdit" style="display: none;">
+                    <button id="editPlayer">Edit Player</button>
+                    <button id="deletePlayer">Delete Player</button>
+                </div>
+            </div>
+        </div>
+        <div class="fieldContainer">
+            <div class="stadiumDrop show"></div>
+            <div class="displayHome show" id="displayHome">
+            </div>
+            <div class="displayAway show" id="displayAway">
+            </div>
+            <div class="format show" >
+                <img class="stadiumField" src="images/Football_Field_Diagram_Template_9692-removebg-preview.png" alt="">
+            </div>
+            <img src="images/1.jpeg" alt="" id="stadium">
+        </div>
+        <div class="preference">
+            <button id="formation">Check Formation</button>
+            <button id="stadiumBtn">Change Stadium</button>
+        </div>
+        <div class="coach">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <div><img src="images/ancelotti copy    .jpeg" alt="" id="homeMan"></div>
+                    <div>
+                        <p>Team: Home</p>
+                    </div>
+                </div>
+                <select name="" id="homeManSelect">
+                    <option value="ancelotti">Carlo Ancelotti</option>
+                    <option value="Morinho">Jose Morinho</option>
+                    <option value="pep">Pep Guardiola</option>
+                    <option value="Alex">Alex Ferguson</option>
+                    <option value="Wenger">Arsene Wenger</option>
+                    <option value="Klopp">Jurgen Klopp</option>
+                    <option value="zidane">Zinedine Zidane</option>
+                </select>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <div><img src="images/Morinho copy.jpeg" alt="" id="awayMan"></div>
+                    <div>
+                        <p>Team: Away</p>
+                    </div>
+                </div>
+                <select name="" id="awayManSelect">
+                    <option value="Morinho">Jose Morinho</option>
+                    <option value="ancelotti">Carlo Ancelotti</option>
+                    <option value="pep">Pep Guardiola</option>
+                    <option value="Alex">Alex Ferguson</option>
+                    <option value="Wenger">Arsene Wenger</option>
+                    <option value="Klopp">Jurgen Klopp</option>
+                    <option value="zidane">Zinedine Zidane</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <div class="edit">
+        <div>
+            <input type="text" placeholder="Change UserName" id="editUsername">
+            <input type="text" placeholder="Chnage Age" id="editAge">
+            <input type="file" accept="images/*" style="display: none;" id="upload2">
+            <label for="upload2">Change Img</label>
+        </div>
+        <img src="images/user.png" alt="" id="editDisplayImg" style="border-radius: 50%;">
+        <button id="saveChanges">Save Changes</button>
+    </div>
+</body>
+<script>
+
+
+
+    // class PlayerInfo {
+    //     constructor (pName, pPost, pAge) {
+    //         this.name = pName,
+    //         this.position = pPost,
+    //         this.age = pAge
+    //     }
+    // }
+    // let GK = new PlayerInfo ('ronaldo', 'striker', 40)
+    // console.log(GK);
+    
+</script>
+<script src="app.js"></script>
+</html>
